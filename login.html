@@ -1,0 +1,85 @@
+<html>
+    <script>
+        function myfu(){
+            alert("You don't have an accout we will redirect to signup page");
+        }
+    </script>
+  <style>
+    body {
+  background-color: black;
+  color: black;
+  font-family: "inter";
+  font-size: "20px";
+}
+
+/* .login > h1 {
+  margin: 20px 20px;
+} */
+
+.bg {
+  background: url("https://thumbs.dreamstime.com/b/seamless-gadgets-background-texture-28968270.jpg");
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  background-color: rgb(137, 197, 199,0.9);
+  width: 400px;
+  position: absolute;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 50px;
+  
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 10px;
+  width: 250px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 15px;
+  
+}
+
+
+
+.login input[type="button"] {
+  background: none;
+  border: 2px solid black;
+  padding: 10px 10px;
+  width: 100px;
+  margin: 10px 10px;
+  border-radius: 15px;
+  
+}
+
+.login input[type="button"]:hover {
+  background-color: rgb(0, 0, 0);
+  color: lightblue;
+}
+  </style>
+  <head>
+    
+    <title>Login Page</title>
+    
+    
+  </head>
+  <body>
+    <div class="bg"></div>
+    <form class="login">
+      <h1><b>Login</b></h1>
+      <input type="text" placeholder="Enter Email" />
+      <input type="password" placeholder="Enter Password" />
+      <a href="./index.html"><input type="button" value="Login" /></a>
+      <p>Don't have an account? <a href="./signup.html" onclick="myfu()">Sign Up</a></p>
+    </form>
+  </body>
+</html>
